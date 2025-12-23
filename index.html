@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duty Web</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#hero">
+          <img src="assets/icons/logo.svg" alt="Логотип" />
+        </a>
+        <nav class="primary-nav" aria-label="Главное меню">
+          <ul>
+            <li><a href="#about">Opportunities</a></li>
+            <li><a href="#inventory">Advantages</a></li>
+            <li><a href="#benefits">How it works</a></li>
+          </ul>
+        </nav>
+        <button class="header-btn accent-btn" type="button">
+          Submit your application
+        </button>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span class="sr-only">Открыть меню</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <div class="menu-content">
+        <div class="menu-top">
+          <a class="logo" href="#hero">
+            <img src="assets/icons/logo.svg" alt="Логотип" />
+          </a>
+          <button class="menu-close" type="button" aria-label="Закрыть меню">
+            ×
+          </button>
+        </div>
+        <ul>
+          <li><a href="#about">Opportunities</a></li>
+          <li><a href="#inventory">Advantages</a></li>
+          <li><a href="#benefits">How it works</a></li>
+        </ul>
+        <button class="accent-btn" type="button">
+          Submit your application
+        </button>
+      </div>
+    </div>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>
+              <span class="accent-text">AdTech platform</span> for <br />
+              advertisers and publishers
+            </h1>
+            <p class="description">
+              <span class="accent-text">A unified ecosystem:</span> DSP for
+              media buying and optimization, SSP for monetization, AdExchange
+              for access to premium inventory, plus AdServing, SDK, and CTV /
+              Instream Web / In-app solutions.
+            </p>
+            <div class="hero-actions">
+              <a href="#form" class="accent-btn" type="button"
+                >Submit your application</a
+              >
+            </div>
+          </div>
+        </div>
+        <figure class="hero-media" aria-label="illustration">
+          <img class="hero-media__img" src="assets/images/hero-bg.png" alt="" />
+        </figure>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container about-container">
+          <header class="section-header">
+            <h2>Who Buzzoola is for</h2>
+          </header>
+          <div class="about__cards">
+            <article
+              class="text-card main-text is-open about-card about-card--colored"
+              data-accordion
+            >
+              <div
+                class="text-card__accordion-content"
+                id="about-accordion-content"
+              >
+                <p class="about-card__title green">For Advertisers</p>
+                <ul>
+                  <li>
+                    Access to premium inventory across CTV, Web Video, and
+                    In-app
+                  </li>
+                  <li>
+                    KPI-driven campaign management: reach, VTR, completion rate,
+                    brand metrics
+                  </li>
+                  <li>Transparent reporting and continuous optimization</li>
+                </ul>
+              </div>
+            </article>
+            <article
+              class="text-card main-text is-open about-card"
+              data-accordion
+            >
+              <div
+                class="text-card__accordion-content"
+                id="about-accordion-content"
+              >
+                <p class="about-card__title">For Publishers</p>
+                <ul>
+                  <li>Revenue growth through SSP, SDK, and AdServing</li>
+                  <li>Flexible ad formats, including high-impact solutions</li>
+                  <li>Brand-safe environment and quality control</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <img class="about__img" src="assets/images/about.png" alt="" />
+        </div>
+      </section>
+
+      <section class="section inventory" id="inventory">
+        <figure class="inventory-media" aria-label="illustration">
+          <img
+            class="hero-media__img"
+            src="assets/images/delivers-bg.png"
+            alt=""
+          />
+        </figure>
+        <div class="container">
+          <header class="section-header">
+            <h2 class="h2--white">What the platform delivers</h2>
+          </header>
+          <div class="inventory-wrapper">
+            <article
+              class="inventory-card"
+              aria-labelledby="inventory-ctv-title"
+            >
+              <div class="inventory-card__head">
+                <div>
+                  <p class="inventory-card__title">Buzzoola AdExchange</p>
+                  <p class="inventory-card__subtitle text-bold">
+                    A video advertising marketplace with premium quality
+                    standards
+                  </p>
+                </div>
+                <div class="inventory-card__img">
+                  <img src="assets/images/delivers/1.png" alt="" />
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="inventory-card__subtitle--mobile text-bold">
+                  A video advertising marketplace with premium quality standards
+                </p>
+                <ul>
+                  <li>
+                    Access to premium publishers and brand-safe environments
+                  </li>
+                  <li>
+                    Guaranteed viewability and strict brand-safety controls
+                  </li>
+                  <li>Smart bidding and pricing optimization algorithms</li>
+                  <li>
+                    Unified infrastructure for brands, agencies, and platforms
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article
+              class="inventory-card"
+              aria-labelledby="inventory-ctv-title"
+            >
+              <div class="inventory-card__head">
+                <div>
+                  <p class="inventory-card__title">Buzzoola SSP</p>
+                  <p class="inventory-card__subtitle text-bold">
+                    Publisher monetization with a focus on maximum revenue
+                  </p>
+                </div>
+                <div class="inventory-card__img">
+                  <img src="assets/images/delivers/2.png" alt="" />
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="inventory-card__subtitle--mobile text-bold">
+                  Publisher monetization with a focus on maximum revenue
+                </p>
+                <ul>
+                  <li>Intelligent ad delivery and yield optimization</li>
+                  <li>
+                    Support for Video Instream, Outstream, Skin, and Rich Media
+                    formats
+                  </li>
+                  <li>
+                    Domain bundles, content classification, and anti-fraud tools
+                  </li>
+                  <li>Inventory support across Web, In-app, CTV</li>
+                </ul>
+              </div>
+            </article>
+
+            <article
+              class="inventory-card"
+              aria-labelledby="inventory-ctv-title"
+            >
+              <div class="inventory-card__head">
+                <div>
+                  <p class="inventory-card__title">Connected TV (CTV)</p>
+                  <p class="inventory-card__subtitle text-bold">
+                    Premium video advertising on large screens
+                  </p>
+                </div>
+                <div class="inventory-card__img">
+                  <img src="assets/images/delivers/3.png" alt="" />
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="inventory-card__subtitle--mobile text-bold">
+                  Premium video advertising on large screens
+                </p>
+                <ul>
+                  <li>Access to OTT services and Smart TV applications</li>
+                  <li>High user attention and strong video completion rates</li>
+                  <li>Full support for modern video advertising standards</li>
+                  <li>
+                    Brand-safe environment with minimal fraud and bot traffic
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article
+              class="inventory-card"
+              aria-labelledby="inventory-ctv-title"
+            >
+              <div class="inventory-card__head">
+                <div>
+                  <p class="inventory-card__title">Web</p>
+                  <p class="inventory-card__subtitle text-bold">
+                    Inventory and delivery across premium web environments
+                  </p>
+                </div>
+                <div class="inventory-card__img">
+                  <img src="assets/images/delivers/4.png" alt="" />
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="inventory-card__subtitle--mobile text-bold">
+                  Inventory and delivery across premium web environments
+                </p>
+                <ul>
+                  <li>
+                    Publisher inventory across editorial and content-driven
+                    websites
+                  </li>
+                  <li>
+                    Multiple format support and flexible delivery scenarios
+                  </li>
+                  <li>Quality assurance, brand safety, and supply control</li>
+                  <li>Transparent reporting and performance optimization</li>
+                </ul>
+              </div>
+            </article>
+
+            <article
+              class="inventory-card"
+              aria-labelledby="inventory-ctv-title"
+            >
+              <div class="inventory-card__head">
+                <div>
+                  <p class="inventory-card__title">Buzzoola SDK</p>
+                  <p class="inventory-card__subtitle text-bold">
+                    Native in-app integrations and mobile app monetization
+                  </p>
+                </div>
+                <div class="inventory-card__img">
+                  <img src="assets/images/delivers/5.png" alt="" />
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="inventory-card__subtitle--mobile text-bold">
+                  Native in-app integrations and mobile app monetization
+                </p>
+                <ul>
+                  <li>
+                    Lightweight SDK for seamless in-app traffic integration
+                  </li>
+                  <li>
+                    Support for all key video formats: pre-roll, mid-roll,
+                    post-roll
+                  </li>
+                  <li>High eCPM and strong demand from premium advertisers</li>
+                  <li>Stable delivery and transparent performance analytics</li>
+                </ul>
+              </div>
+            </article>
+
+            <article
+              class="inventory-card"
+              aria-labelledby="inventory-ctv-title"
+            >
+              <div class="inventory-card__head">
+                <div>
+                  <p class="inventory-card__title">Ads Manager</p>
+                  <p class="inventory-card__subtitle text-bold">
+                    Campaign management — fast, transparent, and fully
+                    controlled
+                  </p>
+                </div>
+                <div class="inventory-card__img">
+                  <img src="assets/images/delivers/6.png" alt="" />
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="inventory-card__subtitle--mobile text-bold">
+                  Campaign management — fast, transparent, and fully controlled
+                </p>
+                <ul>
+                  <li>End-to-end management of formats and placements</li>
+                  <li>Flexible analytics and real-time reporting</li>
+                  <li>
+                    Advanced targeting, frequency capping, and audience controls
+                  </li>
+                  <li>Intuitive interface for media teams and agencies</li>
+                </ul>
+              </div>
+            </article>
+
+            <article
+              class="inventory-card inventory-card--full"
+              aria-labelledby="inventory-ctv-title"
+            >
+              <div class="inventory-card__head">
+                <div>
+                  <p class="inventory-card__title">AdServing</p>
+                  <p class="inventory-card__subtitle text-bold">
+                    Buzzoola AdServing is a robust, scalable ad delivery
+                    platform built for complex media environments and high
+                    traffic volumes.It enables full control over ad placement,
+                    prioritization, and delivery logic across multiple platforms
+                    and inventory types.
+                  </p>
+                </div>
+                <div class="inventory-card__img">
+                  <img src="assets/images/delivers/7.png" alt="" />
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="inventory-card__subtitle--mobile text-bold">
+                  Buzzoola AdServing is a robust, scalable ad delivery platform
+                  built for complex media environments and high traffic
+                  volumes.It enables full control over ad placement,
+                  prioritization, and delivery logic across multiple platforms
+                  and inventory types.
+                </p>
+                <ul>
+                  <li>White-label ad serving solution</li>
+                  <li>Full control over placements and delivery logic</li>
+                  <li>Flexible priority and waterfall management</li>
+                  <li>KPI-driven optimization rules</li>
+                </ul>
+                <ul>
+                  <li>Support for Web, In-App, and CTV environments</li>
+                  <li>High-scale and stable ad delivery</li>
+                  <li>Seamless integration with SSP, DSP, and SDK</li>
+                  <li>Transparent reporting and performance control</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section benefits" id="benefits">
+        <div class="container">
+          <header class="section-header">
+            <h2 class="h2--white">Why Buzzoola</h2>
+          </header>
+          <div class="audience-grid">
+            <article>
+              <h3>Technology at every level</h3>
+              <p>
+                Optimization algorithms, forecasting, frequency management, and
+                advanced analytics.
+              </p>
+            </article>
+            <article>
+              <h3>Premium inventory</h3>
+              <p>
+                Vetted publishers, content classification, anti-fraud
+                protection, and strict brand-safety standards.
+              </p>
+            </article>
+            <article>
+              <h3>Full transparency</h3>
+              <p>
+                Real-time dashboards, detailed reporting, and analysis by
+                placements and formats.
+              </p>
+            </article>
+            <article>
+              <h3>Flexibility for any objective</h3>
+              <p>
+                Reach, performance metrics, brand metrics, and audience
+                engagement.
+              </p>
+            </article>
+            <article>
+              <h3>An ecosystem of 5+ products</h3>
+              <p>AdExchange, SSP, SDK, AdServing, Ads Manager.</p>
+            </article>
+            <article>
+              <h3>Expert support</h3>
+              <p>
+                Campaign strategy, format selection, and creative
+                recommendations.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section steps">
+        <div class="container">
+          <header class="section-header steps-header">
+            <h2 class="h2--white steps-title">
+              How the Buzzoola ecosystem works
+            </h2>
+            <p class="green">A unified flow from advertiser to user</p>
+            <p>
+              Buzzoola connects demand and supply through a fully integrated
+              AdTech ecosystem, ensuring transparency, control, and efficiency
+              at every stage of the advertising journey.
+            </p>
+          </header>
+          <div class="steps-flow" role="list">
+            <div
+              class="steps-flow__item steps-flow__item--advertiser"
+              role="listitem"
+            >
+              <div class="steps-flow__block">Advertiser</div>
+            </div>
+            <div class="steps-flow__item steps-flow__item--dsp" role="listitem">
+              <div class="steps-flow__block">DSP</div>
+            </div>
+            <div
+              class="steps-flow__item steps-flow__item--exchange"
+              role="listitem"
+            >
+              <div class="steps-flow__block">AdExchange</div>
+            </div>
+            <div class="steps-flow__item steps-flow__item--ssp" role="listitem">
+              <div class="steps-flow__block">SSP / SDK</div>
+            </div>
+            <div class="steps-flow__item steps-flow__item--web" role="listitem">
+              <div class="steps-flow__block">Web/In-App<br />/CTV</div>
+            </div>
+            <div
+              class="steps-flow__item steps-flow__item--user"
+              role="listitem"
+            >
+              <div class="steps-flow__block">User</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="form" class="section cta" aria-labelledby="cta-title">
+        <div class="container">
+          <div class="cta-card">
+            <header class="cta-card__header">
+              <h2 id="cta-title">Let’s discuss your goals</h2>
+              <p>
+                Tell us about your objectives — we’ll suggest how Buzzoola’s
+                AdTech ecosystem can support your strategy.
+              </p>
+            </header>
+            <form class="cta-form">
+              <label class="cta-form__field cta-form__field-50">
+                <span class="sr-only">Name</span>
+                <input type="text" name="name" placeholder="Name" />
+              </label>
+              <label class="cta-form__field cta-form__field-50">
+                <span class="sr-only">Email</span>
+                <input type="email" name="email" placeholder="Email" />
+              </label>
+              <label class="cta-form__field cta-form__field--full">
+                <span class="sr-only">Describe the task</span>
+                <textarea
+                  name="comment"
+                  rows="4"
+                  placeholder="Describe the task"
+                ></textarea>
+              </label>
+              <button class="cta-form__submit" type="submit">
+                Submit your application
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <a class="logo" href="#hero">
+            <img src="assets/icons/logo.svg" alt="Логотип" />
+          </a>
+          <p>© Buzzoola 2025</p>
+        </div>
+        <p>109028, Moscow, Maly Ivanovsky Lane 6, Building 2</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
