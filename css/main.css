@@ -654,6 +654,8 @@ blockquote {
 .steps-header {
   font-weight: 700;
   font-size: 25px;
+  position: relative;
+  z-index: 10;
 }
 
 .steps-title {
@@ -1078,6 +1080,9 @@ blockquote {
     font-size: 70px;
     line-height: 1;
   }
+  .hero-text h1 br {
+    display: none;
+  }
   .logo {
     font-size: 35px;
   }
@@ -1167,9 +1172,14 @@ blockquote {
   }
 
   .steps-header p {
-    margin-left: 20px;
+    margin: 0px 20px;
     font-weight: 500;
     font-size: 20px;
+  }
+
+  .steps-header p.green {
+    font-size: 25px;
+    font-weight: 700;
   }
 
   .steps-flow {
